@@ -80,9 +80,10 @@ class ViewController: UIViewController {
         //MARK: Anchors
         var previous: UILabel?
 
+        // leading = esquerda, trailling = direita, exceto em linguagens em que se le da direita p esquerda, ai é o contrario
         for label in [label1, label2, label3, label4, label5] {
             label.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-            label.heightAnchor.constraint(equalToConstant: 88).isActive = true
+            label.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.20, constant: -25).isActive = true
             
             if let previous = previous {
                 // espaco entre as labels
