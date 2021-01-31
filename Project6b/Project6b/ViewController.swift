@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let metrics = ["labelHeight": 88]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +64,13 @@ class ViewController: UIViewController {
 
         // Vertical layout
         // the - symbol means "space". It's 10 points by default
-        view.addConstraints( NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1]-[label2]-[label3]-[label4]-[label5]", options: [], metrics: nil, views: viewsDictionary))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1]-[label2]-[label3]-[label4]-[label5]", options: [], metrics: nil, views: viewsDictionary))
+
+        // Espacos dentro do parentese apos o nome do label, nesse caso, estamos usando o dicionario criado antes do viewDidLoad
+        // o que vai dentro do () é colocado ali como metrics
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[label1(labelHeight)]-[label2(labelHeight)]-[label3(labelHeight)]-[label4(labelHeight)]-[label5(labelHeight)]->=10-|", options: [], metrics: metrics, views: viewsDictionary))
+
+
 
     }
 
