@@ -26,6 +26,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxn-1I-gBW">
                                 <rect key="frame" x="107" y="98" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wxn-1I-gBW" secondAttribute="height" multiplier="2:1" id="oLp-oP-eSO"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -45,10 +48,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aSM-g0-XjH" firstAttribute="centerX" secondItem="P7j-1S-ddU" secondAttribute="centerX" id="CcD-00-iyZ"/>
+                            <constraint firstItem="P7j-1S-ddU" firstAttribute="height" secondItem="Wxn-1I-gBW" secondAttribute="height" id="JZV-Ej-2ej"/>
                             <constraint firstItem="Wxn-1I-gBW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Kfp-tZ-UEZ"/>
                             <constraint firstItem="P7j-1S-ddU" firstAttribute="centerX" secondItem="Wxn-1I-gBW" secondAttribute="centerX" id="eeA-uI-FkN"/>
                             <constraint firstItem="aSM-g0-XjH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="emv-dT-8b5"/>
                             <constraint firstItem="aSM-g0-XjH" firstAttribute="top" secondItem="P7j-1S-ddU" secondAttribute="bottom" constant="30" id="fRJ-zS-otG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aSM-g0-XjH" secondAttribute="bottom" constant="20" id="gav-yH-ZN0"/>
+                            <constraint firstItem="aSM-g0-XjH" firstAttribute="height" secondItem="P7j-1S-ddU" secondAttribute="height" id="lYn-Xk-dL3"/>
                             <constraint firstItem="Wxn-1I-gBW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="rf8-Xd-YNg"/>
                             <constraint firstItem="P7j-1S-ddU" firstAttribute="top" secondItem="Wxn-1I-gBW" secondAttribute="bottom" constant="30" id="z5n-9g-hcm"/>
                         </constraints>
